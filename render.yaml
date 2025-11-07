@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: tanya-chatgpt-pro-malaysia
+    env: node
+    plan: free
+    region: singapore
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    rootDir: "."
+    envVars:
+      - key: PORT
+        value: 3000
