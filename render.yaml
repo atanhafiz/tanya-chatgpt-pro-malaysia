@@ -4,9 +4,10 @@ services:
     env: node
     plan: free
     region: singapore
-    buildCommand: "npm install"
-    startCommand: "npm start"
-    rootDir: "."
+    buildCommand: npm install
+    startCommand: npm start
+    rootDir: .
+    autoDeploy: true
     envVars:
       - key: PORT
         value: 3000
